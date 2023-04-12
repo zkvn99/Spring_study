@@ -13,7 +13,7 @@ public class RestfulController {    //open-api 작성할 때 많이 사용함, �
     @Autowired
     MemoRepository memoRepository;  // 필드 주입(injection) : Spring Framework가 필요시점에 객체를 생성해서 주입함
 
-    @GetMapping("/")
+    @GetMapping("/home")
     public String getHome() {
         return "welcome-rest-request";  //response-body에 해당하는 자원을 반환
     }
